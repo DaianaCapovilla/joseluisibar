@@ -107,13 +107,15 @@ padding-right: 4px;
 }
 
 .btn-JLI-secondary {
+    display: inline-block;
     background-color: #F8FAFA;
     color: #0D0E10;;
     border-radius: 100px;
+    text-decoration: none;
     font-size: 1rem;
     font-weight: 700;
-    padding: 16px 24px;
-    margin-top: 24px;
+    padding: 12px 24px;
+    margin-top: 16px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06); 
     border: none;
@@ -182,6 +184,24 @@ padding-right: 4px;
     flex-wrap: nowrap; 
     justify-content: flex-start;
     gap: 24px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: calc(50% - 20px); /* resta la mitad del cuadrado de la flecha */
+    transform: translateY(-50%);  bottom: auto;             /* evita que quede pegado al borde */
+    height: 40px;             /* mismo alto que el cuadrado del ícono */
+    width: 40px;              /* opcional: ajusta ancho para clic */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;       /* cuadrado negro */
+  width: 40px;                   /* ancho del cuadrado */
+  height: 40px;                  /* alto del cuadrado */
+  background-size: 50% 50%;      /* tamaño de la flecha */
+  background-position: center;   /* flecha centrada */
+  background-repeat: no-repeat;  /* evita repeticiones */
 }
 
 
@@ -451,3 +471,28 @@ padding-right: 4px;
 #back-to-top:hover {
     background-color: #0D0E10;
 }  
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #282728;
+    color: #F8FAFA;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+    color: white;
+  }
+  
