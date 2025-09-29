@@ -219,18 +219,21 @@ padding-right: 4px;
     overflow-x: auto;
 } */
 
-
 #sobre-mi {
     padding: 100px 80px;
 }
 
-.img-sobremi {
-    padding-right: 100px;
-}
-
 .title-ink {
     font-family: 'Inkburro', 'Plus Jakarta Sans', sans-serif;
-    font-size: 80px;
+    font-size: clamp(32px, 8vw, 80px);
+    margin-bottom: 0px;
+    color: #4F5052;
+}
+
+.p-sobremi {
+    font-size: clamp(14px, 2.5vw, 16px);
+    margin-bottom: 0;
+    color: #282728;
 }
 
 #coleccionImaginatu {
