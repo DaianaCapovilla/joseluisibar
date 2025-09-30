@@ -279,20 +279,22 @@ padding-right: 4px;
     letter-spacing: 1px;
 }
 
-.Abstraktua-row {
-    display: flex;
-    flex-wrap: nowrap; 
-    justify-content: flex-start;
-    gap: 24px;
+.abstraktua-row {
+    overflow: hidden;
+    margin: 24px 0px;
 }
 
-#carouselAbstraktua img {
+.abstraktua-img {
     width: 350px;
     height: 350px;
-    object-fit: cover; /* recorta sin deformar */
+    object-fit: cover; 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.abstraktua-img:hover {
+    cursor: pointer;
 }
 
 #colecciones {
@@ -413,7 +415,7 @@ padding-right: 4px;
 .product {
     text-align: start;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    height: 100%; /* Para que todas las tarjetas se alineen en altura */
+    height: 100%; 
 }
 
 .product:hover {
@@ -423,9 +425,9 @@ padding-right: 4px;
 }
 
 .product img {
-    width: 100%;          /* se ajusta al ancho de la columna */
-    aspect-ratio: 1 / 1;  /* cuadrado perfecto */
-    object-fit: cover;    /* recorta sin deformar */
+    width: 100%;        
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;    
     margin-bottom: 16px;
 }
 
